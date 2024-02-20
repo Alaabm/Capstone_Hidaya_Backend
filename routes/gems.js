@@ -19,4 +19,14 @@ router.put('/:id', update);
 //Delete a gem
 router.delete('/:id', destroy);
 
+//Delete a single data entry
+// router.delete("/:id", async (req, res) => {
+//     let collection = await db.collection('gems');
+//     let query = {_id: new ObjectId(req.params.id)};
+//     let result = await collection.deleteOne(query);
+  
+//     if (!result) res.send ("Not Found").status(404)
+//     else res.send(result).status(200);
+//   });
+
 module.exports = router;
