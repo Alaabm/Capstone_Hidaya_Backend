@@ -1,4 +1,4 @@
-Hidaya Halaqah
+Hidaya 
 
 What Are Duas?
 
