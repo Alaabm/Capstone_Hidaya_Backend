@@ -14,7 +14,8 @@ const gemRouter = require("./routes/gems");
 //ADDED BY ME
 const namesOfAllahRouter = require("./routes/namesOfAllah");
 //ADDED BY ME
-const messageRouter = require("./routes/messages");
+const emailRouter = require("./routes/emails");
+
 
 // Configuring the server to accept and parse JSON data.
 app.use(express.json());
@@ -30,9 +31,9 @@ app.use("/gems", gemRouter);
 //connect the router//loads the controller/loads the model/loads mongoose from config(all connected)
 app.use("/namesOfAllah", namesOfAllahRouter);
 //ADDED BY ME
-// /gems
+// /namesOfAllah
 //connect the router//loads the controller/loads the model/loads mongoose from config(all connected)
-app.use("/messages", messageRouter);
+app.use("/emails", emailRouter);
 
 
 

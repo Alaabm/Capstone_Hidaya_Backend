@@ -3,9 +3,9 @@ const express = require('express');
 const router = express.Router()
 
 //Grab the controller functions
-const {index, create, destroy, update} = require("../controllers/messages");
+const {index, create, destroy, update} = require("../controllers/emails");
 
-//http://localhost:8080/gems
+// http://localhost:8080/gems
 
 //Get all gems
 router.get('/', index);
@@ -18,5 +18,7 @@ router.put('/:id', update);
 
 //Delete a gem
 router.delete('/:id', destroy);
+
+
 
 module.exports = router;
