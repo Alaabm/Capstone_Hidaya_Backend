@@ -8,11 +8,11 @@ const emailSchema = new Schema(
     },
     last: {
       type: String,
-      required: false,
+      required: true,
     },
     phone: {
       type: String,
-      required: false,
+      required: true,
     },
     email: {
       type: String,
